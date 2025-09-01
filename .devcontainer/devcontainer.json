@@ -1,12 +1,8 @@
 {
     "name": "Haskell Environment",
-    "image": "haskell:9.6",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/features/haskell:1": {
-            "ghcVersion": "9.6",
-            "cabalVersion": "3.10",
-            "cabalInstallVersion": "3.10"
-        }
+        "ghcr.io/devcontainers/features/haskell:1": {}
     },
     "customizations": {
         "vscode": {
