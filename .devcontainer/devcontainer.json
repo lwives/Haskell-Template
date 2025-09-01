@@ -2,7 +2,11 @@
     "name": "Haskell Environment",
     "image": "haskell:9.6",
     "features": {
-        "ghcr.io/devcontainers/features/haskell:1": {}
+        "ghcr.io/devcontainers/features/haskell:1": {
+            "ghcVersion": "9.6",
+            "cabalVersion": "3.10",
+            "cabalInstallVersion": "3.10"
+        }
     },
     "customizations": {
         "vscode": {
@@ -10,7 +14,12 @@
                 "haskell.haskell",
                 "justusadam.language-haskell",
                 "haskell-dev.haskell-code-explorer"
-            ]
+            ],
+            "settings": {
+                "haskell.ghc.arguments": [
+                    "-package", "HUnit"
+                ]
+            }
         }
     }
 }
