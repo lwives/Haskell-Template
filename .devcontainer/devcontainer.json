@@ -1,21 +1,13 @@
 {
     "name": "Haskell Environment",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-        "ghcr.io/devcontainers/features/haskell:1": {}
-    },
+    "image": "ghcr.io/devcontainers/haskell:latest",
+    "postCreateCommand": "cabal update && cabal install HUnit",
     "customizations": {
         "vscode": {
             "extensions": [
                 "haskell.haskell",
-                "justusadam.language-haskell",
-                "haskell-dev.haskell-code-explorer"
-            ],
-            "settings": {
-                "haskell.ghc.arguments": [
-                    "-package", "HUnit"
-                ]
-            }
+                "justusadam.language-haskell"
+            ]
         }
     }
 }
