@@ -1,0 +1,16 @@
+{
+    "name": "Haskell Environment",
+    "image": "haskell:9.6",
+    "features": {
+        "ghcr.io/devcontainers/features/haskell:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "haskell.haskell",
+                "justusadam.language-haskell",
+                "haskell-dev.haskell-code-explorer"
+            ]
+        }
+    }
+}
