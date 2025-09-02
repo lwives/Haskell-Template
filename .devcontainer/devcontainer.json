@@ -1,7 +1,7 @@
 {
     "name": "Haskell Environment",
-    "image": "ghcr.io/devcontainers/haskell:bookworm",
-    "postCreateCommand": "cabal update && cabal install HUnit",
+    "image": "mcr.microsoft.com/devcontainers/universal:latest",
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y ghc cabal-install && cabal update && cabal install HUnit",
     "customizations": {
         "vscode": {
             "extensions": [
