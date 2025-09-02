@@ -23,7 +23,7 @@ Para executá-los, abra uma janela do terminal do Codespaces e rode os testes co
 Por exemplo, para o exercício 1, execute o seguinte comando:
 
 ```bash
-runghc Exercicio-01/TestExercicio01.hs
+cabal run Exercicio-01-Test
 ```
 
 ## Ajuda
