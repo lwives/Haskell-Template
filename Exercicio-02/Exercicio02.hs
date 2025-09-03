@@ -6,5 +6,5 @@ module Exercicio02 (ocorrencias) where
 
 -- Exemplo: ocorrencias [1, 2, 3, 2] 2 deve retornar 2
 
-ocorrencias :: [Int] -> Int -> [Int]
+ocorrencias :: [Int] -> Int -> Int
 ocorrencias lst n = undefined -- Implemente aqui

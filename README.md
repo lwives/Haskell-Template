@@ -12,7 +12,7 @@ O GitHub irá criar um ambiente de desenvolvimento pronto para uso, com o GHC (c
 ## Estrutura do Repositório
 
 * `Exemplos/`: Contém arquivos de exemplo com funções e códigos básicas para você se familiarizar com a linguagem.
-* `Exercicio-01/`, `Exercicio-02/`, `Exercicio-03/` ...: Pastas para cada exercício. Sua tarefa é completar os arquivos `.hs` dentro delas.
+* `Exercicio-01/`, `Exercicio-02/`, `Exercicio-03/` ... : Pastas para cada exercício. Sua tarefa é completar os arquivos `.hs` dentro delas.
 
 ## Como testar o código
 

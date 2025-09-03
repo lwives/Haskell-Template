@@ -1,15 +1,18 @@
 module Main where
 
 import Test.HUnit
-import Exercicio01 (listavezesx)
+import Exercicio01 (pertenceLst)
 
-testListavezesx :: Test
-testListavezesx = TestList [
-    "teste 1: lista vazia" ~: listavezesx [] 5 ~?= ([] :: [Int]),
-    "teste 2: numeros positivos" ~: listavezesx [1, 2, 3] 2 ~?= [2, 4, 6],
-    "teste 3: numero negativo" ~: listavezesx [5, 10, 15] (-1) ~?= [-5, -10, -15],
-    "teste 4: multiplicar por zero" ~: listavezesx [100, 200] 0 ~?= [0, 0]
+testPertenceLst :: Test
+testPertenceLst = TestList [
+    "teste 1: numero no meio da lista" ~: pertenceLst [1, 2, 3, 4] 3 ~?= True,
+    "teste 2: numero nao na lista" ~: pertenceLst [1, 2, 3, 4] 5 ~?= False,
+    "teste 3: lista vazia" ~: pertenceLst [] 10 ~?= False,
+    "teste 4: numero eh o primeiro elemento" ~: pertenceLst [1, 2, 3, 4] 1 ~?= True,
+    "teste 5: numero eh o ultimo elemento" ~: pertenceLst [1, 2, 3, 4] 4 ~?= True,
+    "teste 6: lista com numeros negativos" ~: pertenceLst [-5, 0, 5] (-5) ~?= True,
+    "teste 7: numero nao pertence a lista vazia" ~: pertenceLst [] 0 ~?= False
     ]
 
 main :: IO ()
-main = runTestTT testListavezesx >>= print
+main = runTestTT testPertenceLst >>= print

@@ -15,5 +15,5 @@ module Exercicio06 (produtoInterno) where
 -- Opcional: se desejar aumentar o grau de complexidade, utilize também uma 
 -- função anônima (recursiva)!
 
-produtoInterno :: [Int] -> [Int] -> [Int]
+produtoInterno :: [Double] -> [Double] -> Double
 produtoInterno ls1 ls2 = undefined -- Implemente aqui

@@ -34,5 +34,7 @@ module Exercicio07 (produtoInterno) where
 -- Perceba que a definição leva em conta o cálculo do cosseno entre os dois vetores 
 -- (detalhes em: http://en.wikipedia.org/wiki/Cosine_similarity). 
 
+-- copie aqui as funções 'norma' e ProdutoInterno', elaboradas anteriomente, caso as utilize
+
 similaridade :: [Double] -> [Double] -> Double
 similaridade ls1 ls2 = undefined -- Implemente aqui

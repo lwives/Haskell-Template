@@ -6,5 +6,5 @@ module Exercicio01 (pertenceLst) where
 
 -- Exemplo: pertenceLst [1, 2, 3] 2 deve retornar True
 
-pertenceLst :: [Int] -> Int -> [Int]
+pertenceLst :: [Int] -> Int -> Bool
 pertenceLst lst n = undefined -- Implemente aqui
