@@ -1,11 +1,12 @@
-module Exercicio03 (powlist) where
+module Exercicio03 (replica) where
 
--- Implemente a função 'powlist' que recebe uma lista de números e um expoente,
--- e retorna uma nova lista onde cada elemento é elevado à potência do expoente.
+-- Defina a função 'replica', que recebe dois números, 'e' e 'n'. 
+-- O primeiro ('e') representa um elemento a ser repetido. 
+-- O segundo representa a quantidade ('n') de repetições. 
+-- A função deve devolver uma lista com 'n' replicas de 'e'. 
+-- Detalhe: para funcionar, a lista deve usar guards ou case.
 
--- Dica: Use a função (^) para calcular a potência.
+-- Exemplo: replica 2 10 -> [2,2,2,2,2,2,2,2,2,2]
 
--- Exemplo: powlist [2, 3, 4] 2 deve retornar [4, 9, 16]
-
-powlist :: [Int] -> Int -> [Int]
-powlist lst exp = undefined -- Aluno deve implementar aqui
+replica :: Int -> Int -> [Int]
+replica e n = undefined -- Implemente aqui
