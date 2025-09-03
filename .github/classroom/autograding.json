@@ -1,0 +1,68 @@
+{
+  "tests": [
+    {
+      "name": "Exercicio 01: pertenceLst",
+      "setup": "cabal build Exercicio-01-Test",
+      "run": "cabal run Exercicio-01-Test",
+      "input": "",
+      "output": "Test Cases: 7  Calls: 7  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 02: ocorrencias",
+      "setup": "cabal build Exercicio-02-Test",
+      "run": "cabal run Exercicio-02-Test",
+      "input": "",
+      "output": "Test Cases: 6  Calls: 6  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 03: replica",
+      "setup": "cabal build Exercicio-03-Test",
+      "run": "cabal run Exercicio-03-Test",
+      "input": "",
+      "output": "Test Cases: 6  Calls: 6  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 04: positivos",
+      "setup": "cabal build Exercicio-04-Test",
+      "run": "cabal run Exercicio-04-Test",
+      "input": "",
+      "output": "Test Cases: 6  Calls: 6  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 05: norma",
+      "setup": "cabal build Exercicio-05-Test",
+      "run": "cabal run Exercicio-05-Test",
+      "input": "",
+      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 06: produtoInterno",
+      "setup": "cabal build Exercicio-06-Test",
+      "run": "cabal run Exercicio-06-Test",
+      "input": "",
+      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 07: similaridade",
+      "setup": "cabal build Exercicio-07-Test",
+      "run": "cabal run Exercicio-07-Test",
+      "input": "",
+      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
+      "points": 10
+    },
+    {
+      "name": "Exercicio 08: distanciaManhattan",
+      "setup": "cabal build Exercicio-08-Test",
+      "run": "cabal run Exercicio-08-Test",
+      "input": "",
+      "output": "Test Cases: 5  Calls: 5  Failures: 0  Errors: 0",
+      "points": 10
+    }
+  ]
+}
