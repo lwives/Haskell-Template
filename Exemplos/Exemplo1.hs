@@ -1,19 +1,26 @@
--- Este é um arquivo de exemplo para demonstrar algumas funções básicas em Haskell.
+-- Ilustra como especificar função main e como fazer IO simples (no terminal).
 
--- Função que recebe um número e retorna ele multiplicado por 2.
-multiplicaPorDois :: Int -> Int
-multiplicaPorDois x = x * 2
+module Main where
 
--- Função que recebe dois números e retorna a soma deles.
-somaDoisNumeros :: Int -> Int -> Int
-somaDoisNumeros x y = x + y
+import System.IO
+
+-- Função que limpa a tela em um terminal
+clearScreen :: IO ()
+clearScreen = putStr "\ESC[2J" >> hFlush stdout
 
 -- Função que calcula o fatorial de um número.
--- A função usa recursão.
--- O caso base (n = 0) retorna 1.
--- O caso recursivo (n > 0) retorna n multiplicado pelo fatorial de (n-1).
 fatorial :: Int -> Int
 fatorial 0 = 1
 fatorial n = n * fatorial (n - 1)
 
+import system.IO
 
+main :: IO ()
+main = do
+  clearScreen
+  putStrLn "Programa que calcula o fatorial de um número\n"
+  putStrLn "Digite um número: "
+  strTmp <- getLine
+  let numero = read strTmp :: Int       -- tenta converter para inteiro
+  let resultado = fatorial numero
+  putStrLn ("O Fatorial de " ++ show numero ++ " é " ++ show resultado)
