@@ -1,9 +1,10 @@
-module Exercicio01 (listavezesx) where
+module Exercicio01 (pertenceLst) where
 
--- Implemente a função 'listavezesx' que recebe uma lista de números e um número,
--- e retorna uma nova lista com cada elemento da lista original multiplicado pelo número.
+-- Implemente a função 'pertenceLst' que recebe uma lista de números e um número.
+-- Usando recursão, a função devolve 'true' se o número encontra-se na lista ou 'false' se ele não se encontra nela.
+-- Não use funções de alta-ordem
 
--- Exemplo: listavezesx [1, 2, 3] 2 deve retornar [2, 4, 6]
+-- Exemplo: pertenceLst [1, 2, 3] 2 deve retornar True
 
-listavezesx :: [Int] -> Int -> [Int]
-listavezesx lst n = undefined -- Aluno deve implementar aqui
+pertenceLst :: [Int] -> Int -> Bool
+pertenceLst lst n = undefined -- Implemente aqui

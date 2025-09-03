@@ -1,9 +1,10 @@
-module Exercicio02 (invertelst) where
+module Exercicio02 (ocorrencias) where
 
--- Implemente a função 'invertelst' que recebe uma lista e retorna a lista invertida.
--- Não use a função 'reverse' pronta de Haskell.
+-- Implemente a função 'ocorrencias', que recebe uma lista de números e um número. 
+-- Usando recursão, a função devolve o número de ocorrências (i.e., quantidade) do número na lista. 
+-- Não use funções de alta-ordem
 
--- Exemplo: invertelst [1, 2, 3] deve retornar [3, 2, 1]
+-- Exemplo: ocorrencias [1, 2, 3, 2] 2 deve retornar 2
 
-invertelst :: [a] -> [a]
-invertelst lst = undefined -- Aluno deve implementar aqui
+ocorrencias :: [Int] -> Int -> Int
+ocorrencias lst n = undefined -- Implemente aqui

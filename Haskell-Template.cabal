@@ -36,3 +36,56 @@ executable Exercicio-03-Test
     ghc-options:        -Wall
     build-depends:      base >= 4.14 && < 5,
                         HUnit
+
+executable Exercicio-04-Test
+    main-is:            TestExercicio04.hs
+    hs-source-dirs:     Exercicio-04
+    other-modules:      Exercicio04
+    default-language:   Haskell2010
+    ghc-options:        -Wall
+    build-depends:      base >= 4.14 && < 5,
+                        HUnit
+
+executable Exercicio-05-Test
+    main-is:            TestExercicio05.hs
+    hs-source-dirs:     Exercicio-05
+    other-modules:      Exercicio05
+    default-language:   Haskell2010
+    ghc-options:        -Wall
+    build-depends:      base >= 4.14 && < 5,
+                        HUnit
+
+executable Exercicio-06-Test
+    main-is:            TestExercicio06.hs
+    hs-source-dirs:     Exercicio-06
+    other-modules:      Exercicio06
+    default-language:   Haskell2010
+    ghc-options:        -Wall
+    build-depends:      base >= 4.14 && < 5,
+                        HUnit
+
+executable Exercicio-07-Test
+    main-is:            TestExercicio04.hs
+    hs-source-dirs:     Exercicio-07
+    other-modules:      Exercicio07
+    default-language:   Haskell2010
+    ghc-options:        -Wall
+    build-depends:      base >= 4.14 && < 5,
+                        HUnit
+
+executable Exercicio-08-Test
+    main-is:            TestExercicio08.hs
+    hs-source-dirs:     Exercicio-08
+    other-modules:      Exercicio08
+    default-language:   Haskell2010
+    ghc-options:        -Wall
+    build-depends:      base >= 4.14 && < 5,
+                        HUnit  
+
+
+
+                        
+
+
+                        
+                        

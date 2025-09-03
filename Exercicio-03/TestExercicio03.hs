@@ -1,15 +1,17 @@
 module Main where
 
 import Test.HUnit
-import Exercicio03 (powlist)
+import Exercicio03 (replica)
 
-testPowlist :: Test
-testPowlist = TestList [
-    "teste 1: lista vazia" ~: powlist [] 2 ~?= ([] :: [Int]),
-    "teste 2: expoente 2" ~: powlist [2, 3, 4] 2 ~?= [4, 9, 16],
-    "teste 3: expoente 3" ~: powlist [2, 3] 3 ~?= [8, 27],
-    "teste 4: numeros negativos" ~: powlist [(-2), (-3)] 3 ~?= [(-8), (-27)]
+testReplica :: Test
+testReplica = TestList [
+    "teste 1: replica 2 3" ~: replica 2 3 ~?= [2, 2, 2],
+    "teste 2: replica 5 1" ~: replica 5 1 ~?= [5],
+    "teste 3: replicacao zero" ~: replica 10 0 ~?= [],
+    "teste 4: replicando numero negativo" ~: replica (-1) 2 ~?= [-1, -1],
+    "teste 5: replicacao com quantidade negativa" ~: replica 7 (-3) ~?= [],
+    "teste 6: replicando o numero 0" ~: replica 0 5 ~?= [0, 0, 0, 0, 0]
     ]
 
 main :: IO ()
-main = runTestTT testPowlist >>= print
+main = runTestTT testReplica >>= print

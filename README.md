@@ -11,14 +11,14 @@ O GitHub irá criar um ambiente de desenvolvimento pronto para uso, com o GHC (c
 
 ## Estrutura do Repositório
 
-* `Exemplo/`: Contém um arquivo de exemplo (`Exemplo.hs`) com funções básicas para você se familiarizar.
-* `Exercicio-01/`, `Exercicio-02/`, `Exercicio-03/`: Pastas para cada exercício. Sua tarefa é completar os arquivos `.hs` dentro delas.
+* `Exemplos/`: Contém arquivos de exemplo com funções e códigos básicas para você se familiarizar com a linguagem.
+* `Exercicio-01/`, `Exercicio-02/`, `Exercicio-03/` ... : Pastas para cada exercício. Sua tarefa é completar os arquivos `.hs` dentro delas.
 
 ## Como testar o código
 
 Dentro de cada pasta há um arquivo de teste. Execute-os para verificar se seu código passa nos testes. Se passar é porque estão ok. Se não passarem, necessitam de ajustes. 
 
-Para executá-los, abra uma janela do terminal do Codespaces e rode os testes com 'runghc'.
+Para executá-los, abra uma janela do terminal do Codespaces e rode os testes com 'cabal run <arquivo_de_testes>'.
 
 Por exemplo, para o exercício 1, execute o seguinte comando:
 
